@@ -1,0 +1,17 @@
+name: File Operations in Github
+on:
+  push:
+jobs:
+  files:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Create a one files
+        run: echo "Welcome Kiyansh" > devops.txt
+      - name: Display The Content Of the File
+        run: cat devops.txt 
+      - name: Display the Date
+        run: date 
+      - name: Display files and Directories
+        run: ls -ltrh
+      - name: Display the current directory 
+        run: pwd
