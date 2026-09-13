@@ -1,6 +1,6 @@
 name: Github Core Concepts
 on:
-  branches: [ main ]
+  branches: [main]
 jobs:
   build-job:
     runs-on: ubuntu-latest 
