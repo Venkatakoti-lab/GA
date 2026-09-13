@@ -1,7 +1,8 @@
 name: Github Core Concepts
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
+  workflow_dispatch:
 jobs:
   build-job:
     runs-on: ubuntu-latest 

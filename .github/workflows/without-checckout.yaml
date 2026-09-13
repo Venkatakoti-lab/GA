@@ -1,0 +1,11 @@
+name: validating workflow without checkout
+on:
+  workflow_dispatch:
+jobs:
+  files:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Display the content of the files
+        run: cat devops.txt 
+      - name: Display the Date
+        run: date
