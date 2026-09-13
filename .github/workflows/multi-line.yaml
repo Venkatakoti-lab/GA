@@ -4,15 +4,15 @@ on:
 jobs:
   multi-line:
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout Code 
-      uses: actions/checkout@v6
-    - name: Execute multiple commands in single step 
-      run: |
-        uptime 
-        ls -ltrh 
-        ls -la 
-        pwd 
-        uname -a 
-        id -u 
-        cat devops .txt
+    steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v6
+      - name: Execute multiple commands in single step 
+        run: |
+          uptime 
+          ls -ltrh 
+          ls -la 
+          pwd 
+          uname -a 
+          id -u 
+          cat devops .txt
