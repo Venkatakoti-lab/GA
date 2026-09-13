@@ -19,7 +19,7 @@ jobs:
   test-job:
     name: Testing Stage 
     runs-on: ubuntu-latest 
-    # needs: build-job 
+    needs: build-job 
     steps:
       - name: Checkout Code 
         uses: actions/checkout@v6 
