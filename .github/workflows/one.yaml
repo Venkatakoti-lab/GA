@@ -1,7 +1,8 @@
 name: Github Acrions demo
-on: push
-  brances:
-    - main
+on: 
+  push:
+    brances:
+      - main
 jobs:
   build-job:
     runs-on: ubuntu-latest
