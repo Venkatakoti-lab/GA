@@ -1,0 +1,26 @@
+name: Github Core Concepts
+on:
+  branches: [ main ]
+jobs:
+  build-job:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v6 
+      - name: Install Node 
+        uses: actions/setup-node@v7
+        with:
+          node-version: 20
+      - name: Install Dependencies 
+        run: npm install 
+      - name: Build app 
+        run: npm run build 
+  test-job:
+    name: Testing Stage 
+    runs-on: ubuntu-latest 
+    # needs: build-job 
+    steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v6 
+      - name: Run Tests 
+        run: npm tests
