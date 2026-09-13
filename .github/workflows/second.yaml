@@ -1,0 +1,8 @@
+name: Kanakam Workflow
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: print the surname
+        run: echo "Hello Kanakam"
