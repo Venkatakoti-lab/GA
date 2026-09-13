@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: CheckOut The Code
         uses: actions/checkout@v6
+      - name: Give perms to uptime.sh file 
+        run: chmod +x uptime.sh
       - name: Execute The Shell Script 
         run: ./uptime.sh
