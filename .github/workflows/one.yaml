@@ -1,7 +1,7 @@
 name: Github Acrions demo
 on: 
   push:
-    brances:
+    branches:
       - main
 jobs:
   build-job:
