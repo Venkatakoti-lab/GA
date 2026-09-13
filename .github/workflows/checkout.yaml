@@ -1,0 +1,11 @@
+name: Validating Workflow with checkout 
+on:
+  workflow_dispatch:
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Code 
+        uses: actions/checkout@v6
+      - name: Display the content 
+        run: cat devops.txt
