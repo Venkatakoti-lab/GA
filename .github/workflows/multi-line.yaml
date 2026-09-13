@@ -15,4 +15,4 @@ jobs:
           pwd 
           uname -a 
           id -u 
-          cat devops .txt
+          cat devops.txt
