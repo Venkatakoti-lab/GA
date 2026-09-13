@@ -1,0 +1,11 @@
+name: shell-demo
+on:
+  workflow_dispatch:
+jobs:
+  shell_scripting:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: CheckOut The Code
+        uses: actions/checkout@v6
+      - name: Execute The Shell Script 
+        run: ./uptime.sh
