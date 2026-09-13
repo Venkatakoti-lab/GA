@@ -1,0 +1,16 @@
+name: Github Acrions demo
+on: push
+  brances:
+    - main
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+      - name: Show System Info
+        run: uname -a 
+      - name: Install Dependencies
+        run: echo "Installing Dependencies"
+      - name: Build Project
+        run: echo "Build Complete"
